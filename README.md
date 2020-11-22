@@ -12,7 +12,8 @@ The lions share of the learning came from trying to figure code publicly availab
 * Raspberry Pi hat, with spacers for mounting
 * Small OLED display, which on the package shows test of IP address, RAM usage etc.
 * Won't necessarily mount on other cases - but you probably knew that
-* Chip heatsinks make a big difference - if you find one to accompany and fit under the hat on the chips, do it.
+* Chip heatsinks make a big difference (Not Included)
+  * if you find one to accompany and fit under the hat on the chips, this is significantly more effective
 
 ## Things that don't go well out of the box (aka. reasons I had to do this):
 * I couldn't figure this out by using the instructions
