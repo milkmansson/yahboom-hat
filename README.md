@@ -8,7 +8,7 @@ The lions share of the learning came from trying to figure code publicly availab
 
 ![Cooling Hat](https://www.yahboom.net/Public/images/newsimg/5dbce38fe2a9d.jpg)
 
-On the outside:
+On the outside, and in the box:
 * Raspberry Pi hat, with spacers for mounting
 * Small OLED display, which on the package shows test of IP address, RAM usage etc.
 * Won't necessarily mount on other cases - but you probably knew that
