@@ -1,4 +1,4 @@
-# yahboom-hat (v1)
+# yahboom-hat (v0.1) - WARNING: Unfinished Work
 Code and service to make Yahboom Hat work properly.  Instructions and English in original packaging is unsuitable for noobs.  Here is my learning.
 
 Yahboom sell a device called YB-EPV02 (ver1.1).  When I bought this I was a Pi Noob (probably still am) and was pretty upset to not find an a.b.c guide to making it work.  I learned an incredible amount, which I intend to share here.  Suffice to say it was as useful as a brick until I got through the learning, depite looking like a great device on the surface.
