@@ -1,0 +1,10 @@
+[Unit]
+Description=Service to run yahboom RGB Cooling HAT
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/rgb-cooling-hat/rgb-cooling-hat-display.py
+ 
+[Install]
+WantedBy=multi-user.target
