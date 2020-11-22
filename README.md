@@ -4,7 +4,7 @@ Code and service to make Yahboom Hat work properly.  Instructions and English in
 Yahboom sell a device called YB-EPV02 (ver1.1).  When I bought this I was a Pi Noob (probably still am) and was pretty upset to not find an a.b.c guide to making it work.  I learned an incredible amount, which I intend to share here.  Suffice to say it was as useful as a brick until I got through the learning, depite looking like a great device on the surface.
 
 ### WARNING:
-The lions share of the learning came from trying to figure code publicly available at https://www.yahboom.net/study/RGB_Cooling_HAT
+The lions share of the learning came from trying to figure code publicly available at https://www.yahboom.net/study/RGB_Cooling_HAT.  Remnants of their work are in this material.  Like many, I'm learning a bit by doing, in as much as we all stand on the shoulders of giants, every day.  I do not purport this to be my own work.
 
 ![Cooling Hat](https://www.yahboom.net/Public/images/newsimg/5dbce38fe2a9d.jpg)
 
