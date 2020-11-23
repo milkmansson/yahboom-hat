@@ -16,9 +16,11 @@ The lions share of the learning came from trying to figure code publicly availab
   * if you find one to accompany and fit under the hat on the chips, this is significantly more effective
 
 ## Things that don't go well out of the box (aka. reasons I had to do this):
-* I couldn't figure this out by using the instructions
-* Instructions said to use WiringPi, but this is deprecated
-* Running Python example code sometimes resulted in distortion and garbage on the OLED display
+* I couldn't figure this out by using the instructions alone - too many things went wrong.
+* Instructions said to use WiringPi, but this is deprecated (http://wiringpi.com/wiringpi-deprecated/)
+* Example code uses Adafruit i2c, but the quoted (and imported) library is deprecated (https://github.com/adafruit/Adafruit_Python_SSD1306)
+* Running Python example code sometimes resulted in distortion and garbage on the OLED display.  The example code needed a stronger method to send the writes to the display.
+* Depending on the device that had an IP, the display would say wlan0 regardless of what IP address there was.  This had to be made smarter.
 
 
 ## Practical lessons learned
@@ -35,10 +37,14 @@ The lions share of the learning came from trying to figure code publicly availab
 * how to write markdown for github :)
 
 ## Installation Prerequisites:
-sudo apt-get install -y python3-smbus i2c-tools
-Enable i2c in raspi-config
-sudo apt install python3-pip
+Enable i2c in raspi-config, and then:
+~~~
+sudo apt install -y python3-smbus i2c-tools
+sudo apt install -y python3-pip
 sudo pip3 install adafruit-circuitpython-ssd1306
-
+sudo pip3 install Adafruit-GPIO
+sudo pip3 install Adafruit-Blinka
+sudo pip3 install Pillow
+~~~
 
 
