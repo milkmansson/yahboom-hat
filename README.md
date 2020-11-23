@@ -34,6 +34,11 @@ The lions share of the learning came from trying to figure code publicly availab
 * robbed some of the example code from the manufacturer (links etc in good time!)
 * how to write markdown for github :)
 
+## Installation Prerequisites:
+sudo apt-get install -y python3-smbus i2c-tools
+Enable i2c in raspi-config
+sudo apt install python3-pip
+sudo pip3 install adafruit-circuitpython-ssd1306
 
 
 
