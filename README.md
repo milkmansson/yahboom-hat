@@ -34,7 +34,7 @@ The lions share of the learning came from trying to figure code publicly availab
 * Nomenclature about Python3 such that everything was working (YB docs had Python2 references in some places)
 * Troubleshooting using systemctl.
 * robbed some of the example code from the manufacturer (links etc in good time!)
-* how i2c addressing works, and experimenting with i2cdisplay
+* how i2c addressing works, and experimenting with i2cdetect
 * how to fix up the python code to allow for the newer/supported adafruit library (https://github.com/adafruit/Adafruit_CircuitPython_SSD1306)
 * how to write markdown for github :)
 
