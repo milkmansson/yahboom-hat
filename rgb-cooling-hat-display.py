@@ -111,7 +111,7 @@ def setOLEDshow():
     cmd = "free -m | awk 'NR==2{printf \"RAM:%s/%s MB \", $2-$3,$2}'"
     MemUsage = subprocess.check_output(cmd, shell = True)
 
-    cmd = "df -h | awk '$NF==\"/\"{printf \"Disk:%d/%dMB\", ($2-$3)*1024,$2*1024}'"
+    cmd = "df -h | awk '$NF==\"/\"{printf \"Disk:%d/%d MB\", ($2-$3)*1024,$2*1024}'"
     Disk = subprocess.check_output(cmd, shell = True)
 
     cmd = "hostname -I | awk '{ print $1 }'"
@@ -132,7 +132,7 @@ def setOLEDshow():
         time.sleep(.1)
     except:
         exc_tuple = sys.exc_info()
-        print("setoledshow [0]:" + exc_tuple[0] + " [1]:" + exc_tuple[1] + " [2]:" + exc_tuple[2])
+        print("setoledshow [0]:" + str(exc_tuple[0]) + " [1]:" + str(exc_tuple[1]) + " [2]:" + str(exc_tuple[2]))
 
 #setFanSpeed(0x00)
 #setRGBEffect(0x03)
