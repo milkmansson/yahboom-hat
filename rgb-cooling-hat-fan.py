@@ -10,7 +10,7 @@ def setfanspeed(oVal):
         bus.write_byte_data(addr, fan_reg, oVal)
     except:
         exc_tuple = sys.exc_info()
-        print("setfanspeed [0]:" + exc_tuple[0] + " [1]:" + exc_tuple[1] + " [2]:" + exc_tuple[2])
+        print("setfanspeed [0]:" + str(exc_tuple[0]) + " [1]:" + str(exc_tuple[1]) + " [2]:" + str(exc_tuple[2]))
 
 def setRGBEffect(effect):
     try:
@@ -18,7 +18,7 @@ def setRGBEffect(effect):
             bus.write_byte_data(addr, rgb_effect_reg, effect&0xff)
     except:
         exc_tuple = sys.exc_info()
-        print("setRGBEffect [0]:" + exc_tuple[0] + " [1]:" + exc_tuple[1] + " [2]:" + exc_tuple[2])
+        print("setRGBEffect [0]:" + str(exc_tuple[0]) + " [1]:" + str(exc_tuple[1]) + " [2]:" + str(exc_tuple[2]))
 
 def setRGBSpeed(speed):
     try:
@@ -26,7 +26,7 @@ def setRGBSpeed(speed):
             bus.write_byte_data(addr, rgb_speed_reg, speed&0xff)
     except:
         exc_tuple = sys.exc_info()
-        print("setRGBSpeed [0]:" + exc_tuple[0] + " [1]:" + exc_tuple[1] + " [2]:" + exc_tuple[2])
+        print("setRGBSpeed [0]:" + str(exc_tuple[0]) + " [1]:" + str(exc_tuple[1]) + " [2]:" + str(exc_tuple[2]))
 
 def setRGBColor(color):
     try:
@@ -34,7 +34,7 @@ def setRGBColor(color):
             bus.write_byte_data(addr, rgb_color_reg, color&0xff)
     except:
         exc_tuple = sys.exc_info()
-        print("setRGBColor [0]:" + exc_tuple[0] + " [1]:" + exc_tuple[1] + " [2]:" + exc_tuple[2])
+        print("setRGBColor [0]:" + str(exc_tuple[0]) + " [1]:" + str(exc_tuple[1]) + " [2]:" + str(exc_tuple[2]))
 
 def setrgb(num,r,g,b):
     try:
@@ -52,7 +52,7 @@ def setrgb(num,r,g,b):
             bus.write_byte_data(addr,0x03,b&0xff)
     except:
         exc_tuple = sys.exc_info()
-        print("setrgb [0]:" + exc_tuple[0] + " [1]:" + exc_tuple[1] + " [2]:" + exc_tuple[2])
+        print("setrgb [0]:" + str(exc_tuple[0]) + " [1]:" + str(exc_tuple[1]) + " [2]:" + str(exc_tuple[2]))
 
 
 bus = smbus.SMBus(1)
